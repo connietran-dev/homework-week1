@@ -90,36 +90,15 @@ aside {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
     /* Modified background color to have ADA compliant contrast ratio of 4.68:1 according to this tool: https://webaim.org/resources/contrastchecker/ */
+    
     background-color: #227BAA;
 }
 
-/* I've combined selectors since the properties across elements are the same. */
+/* I've re-ordered the element selectors to mimic the order of that they are in the HTML document. */
 
-.benefit-lead, 
-.benefit-brand, 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
+/* I've also removed the classes from the HTML elements and used just their HTML tag instead. */
 
-.benefit-lead h3,
-.benefit-brand h3,
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img,
-.benefit-brand img,
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization,
-.online-reputation-management,
-.social-media-marketing {
+article {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -128,17 +107,30 @@ aside {
     color: #ffffff;
 }
 
-.search-engine-optimization img,
-.online-reputation-management img,
-.social-media-marketing img {
+article img {
     max-height: 200px;
 }
 
-.search-engine-optimization h2,
-.online-reputation-management h2,
-.social-media-marketing h2  {
+article h2  {
     margin-bottom: 20px;
     font-size: 36px;
+}
+
+
+section {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+section h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+section img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
 
 footer {
